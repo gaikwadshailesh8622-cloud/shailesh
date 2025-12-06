@@ -2,79 +2,150 @@
 <html>
 <head>
     <title>Projects</title>
-    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #BFA6E0;
+        }
+
+        header {
+            background: #BFA6E0;
+            color: #000;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            background: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px; /* Reduced padding for better layout */
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+
+        .file-section {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: #f9f9f9;
+        }
+
+        .file-buttons {
+            margin-bottom: 10px;
+        }
+
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+        .viewer {
+            display: none;
+            width: 100%;
+            height: 500px;
+            border: none;
+            border-radius: 8px;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px; /* Adjusted for better spacing */
+        }
+    </style>
 </head>
 <body>
-<style>
-body {
-font-family: Arial, sans-serif;
-margin: 0;
-padding: 0;
-background: #BFA6E0;}
+    <header><h1>My Projects</h1></header>
 
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 
-header {
-background: #BFA6E0;
-color: #000;
-padding: 15px;
-text-align: center;}
+    <div class="container">
+        <h2>Project List</h2>
+        <p>These my IT projects of microsoft that I have done during my Labs.You caan directly view my files by below links</p>
 
+        <!-- PowerPoint Section -->
+        <div class="file-section">
+            <h3>PowerPoint Presentation</h3>
+            <div class="file-buttons">
+                <button onclick="toggleView('ppt-viewer')">View Online</button>
+                <a href="https://docs.google.com/presentation/d/1XoueX7GfkqU16K5MODiLwS5htPS1ER1P/edit?usp=drive_link&ouid=115559168153693512706&rtpof=true&sd=true" download><button>Download</button></a>
+            </div>
+            <iframe id="ppt-viewer" class="viewer" src="https://docs.google.com/presentation/d/1XoueX7GfkqU16K5MODiLwS5htPS1ER1P/edit?usp=drive_link&ouid=115559168153693512706&rtpof=true&sd=true"></iframe>
+        </div>
 
-nav {
-background: #444;
-padding: 10px;
-text-align: center;
-}
+        <!-- Excel Section -->
+        <div class="file-section">
+            <h3>Excel Spreadsheet</h3>
+            <div class="file-buttons">
+                <button onclick="toggleView('excel-viewer')">View Online</button>
+                <a href="https://docs.google.com/spreadsheets/d/1P2pT2ms7bVLI9q_ds3hZyfpjCmpLajiF/edit?usp=drive_link&ouid=115559168153693512706&rtpof=true&sd=true" download><button>Download</button></a>
+            </div>
+            <iframe id="excel-viewer" class="viewer" src="https://docs.google.com/spreadsheets/d/1P2pT2ms7bVLI9q_ds3hZyfpjCmpLajiF/edit?usp=drive_link&ouid=115559168153693512706&rtpof=true&sd=true"></iframe>
+        </div>
 
+        <!-- Word Section -->
+        <div class="file-section">
+            <h3>Word Document</h3>
+            <div class="file-buttons">
+                <button onclick="toggleView('word-viewer')">View Online</button>
+                <a href="https://docs.google.com/document/d/1FGjr8Z9JrBaGws6QZr4X1_t1ADuElikqUM8if34W4ag/edit?usp=drive_link" download><button>Download</button></a>
+            </div>
+            <iframe id="word-viewer" class="viewer" src="https://docs.google.com/document/d/1FGjr8Z9JrBaGws6QZr4X1_t1ADuElikqUM8if34W4ag/edit?usp=drive_link"></iframe>
+        </div>
+    </div>
 
-nav a {
-color: white;
-margin: 0 15px;
-text-decoration: none;
-font-weight: bold;
-}
+    <footer>© 2025 ALL RIGHTS RESERVED</footer>
 
-
-nav a:hover {
-color: #ffd700;
-}
-
-
-.container {
-width: 80%;
-margin: auto;
-padding: 200px;
-}
-
-
-footer {
-background: #333;
-color: white;
-text-align: center;
-padding: 10px;
-margin-top: 700px;
-}
-</style>
-
-
-
-<header><h1>My Projects</h1></header>
-
-<nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="skills.html">Skills</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
-</nav>
-
-<div class="container">
-    <h2>Project List</h2>
-    <p>Describe your apps, websites, or academic projects.</p>
-</div>
-
-<footer>© 2025 ALL RIGHTS RESERVERED</footer>
-
+    <script>
+        function toggleView(viewerId) {
+            const viewer = document.getElementById(viewerId);
+            if (viewer.style.display === 'none' || viewer.style.display === '') {
+                viewer.style.display = 'block';
+            } else {
+                viewer.style.display = 'none';
+            }
+        }
+    </script>
 </body>
 </html>
 
